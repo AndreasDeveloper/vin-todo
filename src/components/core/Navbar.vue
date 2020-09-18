@@ -30,6 +30,7 @@ export default {
             font-size: 20px;
             font-weight: bold;
             text-transform: uppercase;
+            user-select: none;
         }
     }
 }
