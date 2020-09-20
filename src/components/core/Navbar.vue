@@ -14,7 +14,7 @@ export default {
 
 <style lang="scss" scoped>
 .navbar-wrap {
-    background-color: rgb(62, 93, 160);
+    background-color: $color-primary;
     font-family: 'Pacifico', cursive;
     min-height: 8vh;
     width: 100%;
@@ -25,7 +25,7 @@ export default {
         min-height: inherit;
         padding: 0 10px;
         span {
-            color: #fff;
+            color: $color-white;
             cursor: pointer;
             font-size: 20px;
             font-weight: bold;
