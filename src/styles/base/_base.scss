@@ -1,0 +1,25 @@
+// Input styles 
+input, input[type=submit] {
+    border: 1.5px solid rgb(145, 145, 145);
+    border-radius: 2px;
+    padding: 10px;
+    margin: 15px 0;
+    outline: none;
+    width: 350px;
+    transition: all .2s ease-in-out;
+    &:focus {
+        border: 1.5px solid $color-primary-dark;
+    }
+}
+input[type=submit], button {
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    outline: none;
+}
+
+// Anchor tags
+a {
+    text-decoration: none;
+    color: inherit;
+}

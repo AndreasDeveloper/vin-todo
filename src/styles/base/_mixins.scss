@@ -1,0 +1,28 @@
+// Image preset
+@mixin imagePreset {
+    background-position: center;
+    background-size: cover;
+}
+
+// Fix content to the center of the container
+@mixin fixContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+// Set content as flex columns
+@mixin flexCol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+// Sized text
+@mixin sizedText {
+    font-size: 2.9rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}

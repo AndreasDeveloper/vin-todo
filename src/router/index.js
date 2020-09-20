@@ -1,16 +1,27 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+import Vue from 'vue';
+import VueRouter from 'vue-router';
+import Login from '../views/Login.vue';
+import Dashboard from '../views/Dashboard.vue';
+import Home from '../views/Home.vue';
 
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
 const routes = [
+  {
+    path: '/login',
+    name: 'Login',
+    component: Login,
+    meta: {
+      title: 'Login | Vin',
+      hasLayout: false
+    }
+  },
   {
     path: '/',
     name: 'Home',
     component: Home,
     meta: {
-      title: 'Home',
+      title: 'Vin',
       hasLayout: false
     }
   },
@@ -19,14 +30,15 @@ const routes = [
     name: 'Dashboard',
     component: Dashboard,
     meta: {
-      title: 'Dashboard',
+      title: 'Dashboard | Vin',
       hasLayout: true
     }
   }
-]
+];
 
 const router = new VueRouter({
-  routes
-})
+  routes,
+  mode: 'history'
+});
 
-export default router
+export default router;

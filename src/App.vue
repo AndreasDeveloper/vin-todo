@@ -22,10 +22,17 @@ export default {
       },
     },
   },
+  computed: {
+    hasLayout() {
+      return this.$route.meta.hasLayout;
+    },
+  },
 };
 </script>
 
 <style lang="scss">
+@import '@/styles/main.scss';
+
 #app {
   font-family: "Raleway", sans-serif;
   -webkit-font-smoothing: antialiased;

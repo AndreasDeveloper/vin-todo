@@ -1,0 +1,54 @@
+// Login Page
+.login {
+    display: flex;
+    background-color: #f8f8f8;
+    min-height: 100vh;
+    &__left {
+        background-image: linear-gradient(to bottom, rgba($color-primary, 0.5), rgba($color-primary, 0.7)), url('../assets/images/home_1.jpg');
+        position: relative;
+        @include imagePreset;
+        width: 50%;
+        &__content {
+            color: $color-white;
+            text-align: left;
+            @include fixContent;
+            width: 70%;
+
+            h1 {
+                font-size: 4.5rem;
+                text-transform: uppercase;
+            }
+            h2 {
+                font-size: 2rem;
+                font-weight: 400;
+            }
+        }
+    }
+    &__right {
+        position: relative;
+        width: 50%;
+        &__content {
+            @include fixContent;
+            h3 {
+                @include sizedText;
+                margin-bottom: 20px;
+                span {
+                    color: $color-primary-light;
+                    font-size: 2.4rem;
+                }
+            }
+            form {
+                @include flexCol;
+            }
+            h4 {
+                font-size: 1.08rem;
+                font-weight: 500;
+                letter-spacing: .5px;
+                a {
+                    font-weight: 600;
+                    color: $color-primary-light;
+                }
+            }
+        }
+    }
+}
