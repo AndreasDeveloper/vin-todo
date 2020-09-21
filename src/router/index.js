@@ -4,6 +4,7 @@ import Login from '../views/Login.vue';
 import Dashboard from '../views/Dashboard.vue';
 import Home from '../views/Home.vue';
 import Calendar from '../views/Calendar.vue';
+import Data from '../views/Data.vue';
 
 Vue.use(VueRouter);
 
@@ -36,6 +37,14 @@ const routes = [
     path: '/calendar',
     name: 'Calendar',
     component: Calendar,
+    meta: {
+      hasLayout: true
+    }
+  },
+  {
+    path: '/data',
+    name: 'Data',
+    component: Data,
     meta: {
       hasLayout: true
     }

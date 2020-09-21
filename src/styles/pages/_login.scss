@@ -3,6 +3,9 @@
     display: flex;
     background-color: #f8f8f8;
     min-height: 100vh;
+    @media only screen and (max-width: $br-medium) {
+        flex-direction: column;
+    }
     &__left {
         background-image: linear-gradient(to bottom, rgba($color-primary, 0.5), rgba($color-primary, 0.7)), url('../assets/images/home_1.jpg');
         position: relative;
@@ -21,6 +24,16 @@
                 font-size: 2rem;
                 font-weight: 400;
             }
+            h1, h2 {
+                @media only screen and (max-width: $br-medium) {
+                    font-size: 140%;
+                    text-align: center;
+                }
+            }
+        }
+        @media only screen and (max-width: $br-medium) {
+            width: 100%;
+            height: 30vh;
         }
     }
     &__right {
@@ -48,6 +61,10 @@
                     color: $color-primary-light;
                 }
             }
+        }
+        @media only screen and (max-width: $br-medium) {
+            width: 100%;
+            height: 70vh;
         }
     }
 }

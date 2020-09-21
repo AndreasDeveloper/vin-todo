@@ -45,7 +45,7 @@
       </li>
 
       <li class="nav-item">
-        <a href="#" class="nav-link">
+        <a href="#" @click.prevent="handleRoute('/data')" class="nav-link">
           <DataIcon fill="#fff" />
           <span class="link-text">Data</span>
         </a>
