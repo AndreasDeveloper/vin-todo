@@ -1,26 +1,18 @@
 <template>
   <div id="app">
     <template v-if="hasLayout">
-      <Navbar />
+      <SideNav />
     </template>
     <router-view />
   </div>
 </template>
 
 <script>
-import Navbar from "./components/core/Navbar";
+import SideNav from "./components/core/SideNav";
 
 export default {
   components: {
-    Navbar,
-  },
-  watch: {
-    $route: {
-      immediate: true,
-      handler(to, from) {
-        document.title = to.meta.title || "Vin";
-      },
-    },
+    SideNav,
   },
   computed: {
     hasLayout() {
