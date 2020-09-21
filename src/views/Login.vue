@@ -2,7 +2,6 @@
   <div class="login">
     <div class="login__left">
       <div class="login__left__content">
-        <a href="/"><span class="vin-font">Vin</span></a>
         <h1>Security. Freedom. Creativity.</h1>
         <h2>One place. Multiple benefits.</h2>
       </div>
@@ -24,6 +23,16 @@
 <script>
 export default {
   name: 'Login',
+  metaInfo: {
+    title: 'Login | Vin',
+    meta: [
+      { name: 'description', content: 'Login to Vin now and get access to multiple benefits on one place.' },
+      { name: 'author', content: 'Vin | AndreasDEV' },
+      { name: "og:title", property: "og:title", content: "Login | Vin" },
+      { name: "og:type", property: "og:type", content: "website" },
+      { name: "og:description", property: "og:description", content: "Login to Vin now and get access to multiple benefits on one place." },
+    ]
+  }
 }
 </script>
 
