@@ -10,6 +10,9 @@ input, input[type=submit] {
     &:focus {
         border: 1.5px solid $color-primary-dark;
     }
+    @media only screen and (max-width: $br-sm-phone) {
+        width: 250px;
+    }
 }
 input[type=submit], button {
     border: none;
