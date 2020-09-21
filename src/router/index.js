@@ -3,6 +3,7 @@ import VueRouter from 'vue-router';
 import Login from '../views/Login.vue';
 import Dashboard from '../views/Dashboard.vue';
 import Home from '../views/Home.vue';
+import Calendar from '../views/Calendar.vue';
 
 Vue.use(VueRouter);
 
@@ -12,7 +13,6 @@ const routes = [
     name: 'Login',
     component: Login,
     meta: {
-      title: 'Login | Vin',
       hasLayout: false
     }
   },
@@ -21,7 +21,6 @@ const routes = [
     name: 'Home',
     component: Home,
     meta: {
-      title: 'Vin',
       hasLayout: false
     }
   },
@@ -30,7 +29,14 @@ const routes = [
     name: 'Dashboard',
     component: Dashboard,
     meta: {
-      title: 'Dashboard | Vin',
+      hasLayout: true
+    }
+  },
+  {
+    path: '/calendar',
+    name: 'Calendar',
+    component: Calendar,
+    meta: {
       hasLayout: true
     }
   }
