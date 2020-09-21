@@ -1,10 +1,15 @@
 <template>
   <div class="dashboard">
     <h1>Dashboard</h1>
+    <div class="dash-blocks">
+        <DashBlock />
+    </div>
   </div>
 </template>
 
 <script>
+import DashBlock from '../components/Dashboard/DashBlock';
+
 export default {
   name: 'Dashboard',
   metaInfo: {
@@ -16,6 +21,13 @@ export default {
       { name: "og:type", property: "og:type", content: "website" },
       { name: "og:description", property: "og:description", content: "Dashboard gives you freedom, creativity and most importantly security. Dive into it now." },
     ]
+  },
+  components: {
+      DashBlock
   }
 }
 </script>
+
+<style lang="scss" scoped>
+@import '@/styles/pages/_dashboard.scss';
+</style>

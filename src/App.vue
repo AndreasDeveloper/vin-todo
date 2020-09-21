@@ -3,16 +3,21 @@
     <template v-if="hasLayout">
       <SideNav />
     </template>
+    <template v-if="!hasLayout && $route.path !== '/login'">
+      <Navbar />
+    </template>
     <router-view />
   </div>
 </template>
 
 <script>
 import SideNav from "./components/core/SideNav";
+import Navbar from "./components/core/Navbar";
 
 export default {
   components: {
     SideNav,
+    Navbar
   },
   computed: {
     hasLayout() {
