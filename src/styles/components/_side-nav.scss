@@ -39,6 +39,10 @@
         color: $color-white;
     }
   }
+  .logo-nav-link:hover {
+      filter: none !important;
+      background: $color-primary-light !important;
+  }
   
   .nav-link:hover {
     filter: grayscale(0%) opacity(1);

@@ -2,7 +2,7 @@
   <nav class="navbar">
     <ul class="navbar-nav">
       <li class="logo">
-        <a href="/" class="nav-link">
+        <div class="nav-link logo-nav-link">
           <span class="link-text logo-text vin-font">Vin</span>
           <svg
             aria-hidden="true"
@@ -27,7 +27,7 @@
               />
             </g>
           </svg>
-        </a>
+        </div>
       </li>
 
       <li class="nav-item">
