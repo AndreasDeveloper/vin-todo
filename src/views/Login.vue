@@ -10,8 +10,8 @@
       <div class="login__right__content">
         <h3>Login to <span class="vin-font">Vin</span></h3>
         <form>
-          <input type="email" name="email" placeholder="Email Address">
-          <input type="password" name="password" placeholder="Password">
+          <input type="email" name="email" placeholder="Email Address" required>
+          <input type="password" name="password" placeholder="Password" required>
           <input type="submit" value="Login" class="btn-nature">
         </form>
         <h4>Don't have an account? <a href="#">Sign up.</a></h4>
